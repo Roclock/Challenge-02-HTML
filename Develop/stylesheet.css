@@ -4,6 +4,11 @@
     border: 0; 
     padding: 0; 
   } 
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
 h2 {
     border-style: solid;
     border-width: 1px;
@@ -13,12 +18,22 @@ h2 {
     box-shadow: 10px 10px 5px #aaaaaa;
     margin: 20px;
     text-align: center;
-    box-sizing: border-box;
+    box-sizing: border-box center;
     position: relative;
-    font-style: bold;
 }
 h1,
-h3,
+h3 {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50px;
+    padding: 10px;
+    flex: 0 0 300px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    margin: 20px;
+    text-align: center;
+    font-size: larger;
+    font-style: italic;
+}
 h4 {
     border-style: solid;
     border-width: 1px;
@@ -48,9 +63,9 @@ nav {
     text-align: center;
     margin: 3px;
 }
-a {
+li {
     font-family: 'Times New Roman', Times, serif;
-    color: whitesmoke;
+    color: black;
     font-size: larger;
 }
 main {
@@ -64,10 +79,18 @@ nav a {
     text-align: center;
   }
 p {
-    text-justify: auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    color: black;
 }
 
-li {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: medium;
+div {
+    display: block;
 }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+  }
